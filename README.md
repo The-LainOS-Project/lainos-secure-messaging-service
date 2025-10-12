@@ -1,12 +1,19 @@
 # LainOS Secure Messaging Server(LSMS) — XMPP over Tor
 
-Welcome to the **LainOS Onion XMPP Server Guide** — a privacy‑focused, cross‑platform messaging framework using XMPP and the Tor network.
+Welcome to the **LainOS Onion XMPP Server Guide** — a privacy‑focused, cross‑platform messaging framework using XMPP and the Tor network. For Lain fans(or anyone for that matter) who value privacy.
 ![LESME](https://gitlab.com/lainos/lainos-onion-xmpp-server-guide/-/raw/main/lesme_12.png?ref_type=heads)
 
 ![LESME](https://gitlab.com/lainos/lainos-onion-xmpp-server-guide/-/raw/main/lesme9.png?ref_type=heads)
 ---
 
 ## 🌐 What is this?
+
+This project implementation stems all the way back from my work fixing the Tor snowflake pluggable transport for QubesOS and Whonix.  That experience turned into my other project 'VESME', and has finally been integrated another of my projects, LainOS, to creat 'LESME'.
+
+[vesme-avf](https://github.com/amnesia1337/vesme-avf/tree/main)
+[LainOS](https://github.com/The-LainOS-Project)
+
+
 
 **LainOS Secure Messaging Server** is a private, anonymous chat system built on:
 
@@ -162,5 +169,6 @@ Stay secure. Stay private. Stay wired.
 
 # [**PGP signed Server info**](https://pixeldrain.com/d/YDPhuKvf/LainOS-Secure-Messaging-Server-Info-Signed-Message.txt)
 
+Amnesia PGP Fingerprint: 2B53 ECEF 5A47 ACF1 9A08 0E46 B2E5 012D 409A 7AFB
 
 
