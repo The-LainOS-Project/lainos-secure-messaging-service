@@ -123,11 +123,11 @@ Exit profanity, reconnect with:
 torsocks profanity -a yourusername@glcuf4hcwbm3lt6grg7jfwwus7sqpuojozfsnbzzcsf7vbm2jcfqckid.onion
 ```
 
-Enter your PGPpassword, accept the certificate when prompted using the cammand `/tls allow` in profanity.
+Enter your PGP passphrase, accept the certificate when prompted using the command `/tls allow` in profanity.
 
 ---
 
-### 6. Join the official LainOS chatroom
+### 6. Join the official LainOS secure and private chatroom
 
 From within profanity(make sure this is all one line, in gui XMPP clients this is less of a problem):
 
