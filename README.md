@@ -173,6 +173,6 @@ Stay secure. Stay private. Stay wired.
 
 # [**PGP signed Server info**](https://pixeldrain.com/d/YDPhuKvf/LainOS-Secure-Messaging-Server-Info-Signed-Message.txt)
 
-Amnesia PGP Fingerprint: 2B53 ECEF 5A47 ACF1 9A08 0E46 B2E5 012D 409A 7AFB
+Grayson Giles aka Amnesia PGP Fingerprint: 2B53 ECEF 5A47 ACF1 9A08 0E46 B2E5 012D 409A 7AFB
 
 
