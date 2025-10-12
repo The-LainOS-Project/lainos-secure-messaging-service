@@ -12,7 +12,7 @@ A private service for anyone, made easier with LainOS.
 
 As the world get more draconian and takes erodes our rights away, using proprietary solutions seems to get more and more invasive by the day. People in certain countries were blocked from downloading LainOS, so in the last 3 days, I ported my vesme-avf project from debian 12 aarch64 to Archlinux x86_64 to integrate with LainOS, and give people more ways to connect easily despite heavy surveillance in their regions. If we're going to live in a cyberpunk dystopia, we need the tools.
 
-This project implementation stems all the way back from my work fixing the Tor snowflake pluggable transport for QubesOS and Whonix. That experience spawned my other project 'vesme-avf' or VESME, and has finally been integrated with another of my more established projects, LainOS, to create 'LESME'.
+This project implementation stems all the way back from my work fixing the Tor snowflake pluggable transport for QubesOS and Whonix. That experience spawned my other project 'vesme-avf' or VESME, and has finally been integrated with another of my more established projects, LainOS, to create 'LESME'. my work on whonix/qubes can be reviewed here: https://gitlab.com/amnesia1337/portfolio
 
 [vesme-avf](https://github.com/amnesia1337/vesme-avf/tree/main)
 [LainOS](https://github.com/The-LainOS-Project)
@@ -82,7 +82,7 @@ Step	Action	Details / Field Input
 4.	Tap the Plus button (⊕) to start the registration process.	This opens the registration screen.
 5.	Fill the first field (JID)	Enter your desired XMPP address in the format: your_username@server.onion (e.g., neo@lainos.onion).
 
-[registration screen](https://github.com/The-LainOS-Project/lainos-secure-messaging-service/blob/16a91097746c662dd3b9dfa8cefa9506fa7ade57/Screenshot_20251012-044944.PNG)
+![registration screen](https://github.com/The-LainOS-Project/lainos-secure-messaging-service/blob/16a91097746c662dd3b9dfa8cefa9506fa7ade57/Screenshot_20251012-044944.PNG)
 
 6.	Set Password	Provide a strong, unique password.
 7.	Registration Checkbox	Crucially, ensure the "Register on server" box is checked.
