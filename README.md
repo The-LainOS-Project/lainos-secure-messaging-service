@@ -81,6 +81,9 @@ Step	Action	Details / Field Input
 3.	Select Manage Accounts.	
 4.	Tap the Plus button (⊕) to start the registration process.	This opens the registration screen.
 5.	Fill the first field (JID)	Enter your desired XMPP address in the format: your_username@server.onion (e.g., neo@lainos.onion).
+
+[registration screen](https://github.com/The-LainOS-Project/lainos-secure-messaging-service/blob/16a91097746c662dd3b9dfa8cefa9506fa7ade57/Screenshot_20251012-044944.PNG)
+
 6.	Set Password	Provide a strong, unique password.
 7.	Registration Checkbox	Crucially, ensure the "Register on server" box is checked.
 8.	Hostname	Leave the "Hostname" field blank. Another.im will correctly infer the Tor Hidden Service address from your JID.
