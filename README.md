@@ -17,16 +17,76 @@ This project implementation stems all the way back from my work fixing the Tor s
 [vesme-avf](https://github.com/amnesia1337/vesme-avf/tree/main)
 [LainOS](https://github.com/The-LainOS-Project)
 
+## LainOS XMPP Security Profile: A Technical Overview
 
+This document summarizes the security level of the LainOS XMPP utility/setup, which combines XMPP, Tor, and GPG/Pass for highly hardened communication.
 
-**LainOS Secure Messaging Server** is a private, anonymous chat system and service built on:
+The security level achieved by this combination is **Tier 1 (Maximum Hardening)** for a federated messaging system, placing a strong emphasis on **metadata reduction, anonymity, and user-controlled identity.**
 
-* **XMPP (Extensible Messaging and Presence Protocol)** — decentralized real‑time messaging (including group chat/MUC).
-* **Tor (.onion hidden service)** — anonymizes traffic and hides both user IPs and server locations.
-* **Profanity client** — a lightweight terminal XMPP client used in this guide.
-* **PGP Integrated with GNU pass** — anonymized pgp keys for seamless user authentication and storage of plaintext passphrases using GNU `pass`.
-* **TLS** — for server authentication and encryption in transit.
-Together these provide encrypted, anonymous messaging with resistance to surveillance and censorship. For end‑to‑end confidentiality, enable client‑side encryption (OMEMO or PGP).
+---
+
+### Security Stack Breakdown
+
+The LainOS approach relies on three synergistic components, each providing critical security layers:
+
+| Component | Function | Security Layer | Security Level in this Context |
+| :--- | :--- | :--- | :--- |
+| **1. Tor Network Routing** | **Anonymity & Anti-Metadata** | Network Anonymity | **Excellent (Highest Available).** Traffic is bounced through relays, masking the user's real-world IP address and physical location. Using an `.onion` server hides the server's location as well. |
+| **2. GPG / Pass Integration** | **Credential & Identity** | Cryptographic Key & Credential Management | **Excellent.** Stores the XMPP password in an encrypted **Pass** vault, secured by a personal **GPG key**. This prevents password exposure and reinforces the user's cryptographic identity. |
+| **3. XMPP (with Onion Service)** | **Messaging Foundation** | Decentralization & Transport Encryption (TLS) | **Strong.** Provides a non-centralized, open standard platform. Using a hidden `.onion` address bypasses traditional, centralized Certificate Authority (CA) trust models. |
+
+---
+
+### Comparison to Industry Standards
+
+The LainOS setup is fundamentally more resilient against certain attacks than common centralized messaging apps due to its design choices.
+
+#### 1. Against Centralized Services (e.g., Signal, WhatsApp)
+
+| Feature | LainOS XMPP (Hardened) | Signal/WhatsApp (Standard) |
+| :--- | :--- | :--- |
+| **Network Anonymity** | **Highest.** Mandatory routing through Tor. | **Low.** Uses clearnet connection, exposing user IP and device metadata. |
+| **Metadata Protection** | **Excellent** (Tor prevents traffic analysis/logging). | **Good** (Proprietary "Sealed Sender" techniques), but connection metadata is still known to the service provider. |
+| **Identity Anchor** | **GPG Key** (User-controlled, cryptographic). | **Phone Number** (Centralized, KYC-linked identity). |
+| **Platform/Vendor Risk** | **Zero** (Open protocol on self-owned/trusted server). | **High** (Relies on a single, private, third-party entity). |
+| **End-to-End Encryption** | OMEMO (Based on the Signal Protocol). | Signal Protocol. **Comparable.** |
+
+#### 2. Against Standard XMPP Setups
+
+The LainOS utility automates the integration of the most critical security extensions, which are often overlooked in a basic XMPP installation:
+
+* **Standard XMPP:** Typically relies on basic client password storage and connects to a clearnet server, exposing the user's IP.
+* **LainOS Utility:** **Enforces** the use of the **Tor Proxy** and integrates with the **GPG/Pass** credential system, eliminating the weakest links in most standard secure chat configurations.
+
+### Summary
+
+The LainOS utility elevates XMPP security beyond basic End-to-End Encryption (E2EE) by adding crucial layers of **anonymity (Tor)** and **cryptographic identity verification (GPG/Pass)**. This makes it suitable for environments where **metadata and identity protection** are considered equally or more important than message content protection alone.
+XMPP Account Registration (Recommended Method)
+
+The easiest and most reliable method to register an account on the LainOS XMPP server is by combining the Another.im Android client with Orbot running in Power User mode to ensure Tor network access.
+
+Prerequisites
+
+    Orbot: Installed and running.
+
+        Crucial Step: You must manually Torify the app. Go to Orbot's options menu, select "Choose Apps," and make sure "Another.im" is selected to force its connection through the Tor network.
+
+    Another.im: Installed from F-Droid (or Play Store).
+
+Step-by-Step Registration
+
+Step	Action	Details / Field Input
+1.	Open the Another.im application.	
+2.	Tap the three-dot menu (⋮) in the top-right corner.	
+3.	Select Manage Accounts.	
+4.	Tap the Plus button (⊕) to start the registration process.	This opens the registration screen.
+5.	Fill the first field (JID)	Enter your desired XMPP address in the format: your_username@server.onion (e.g., neo@lainos.onion).
+6.	Set Password	Provide a strong, unique password.
+7.	Registration Checkbox	Crucially, ensure the "Register on server" box is checked.
+8.	Hostname	Leave the "Hostname" field blank. Another.im will correctly infer the Tor Hidden Service address from your JID.
+9.	Complete	Press the Confirm/Register button.
+
+The client will now attempt to connect via Orbot and perform the In-Band Registration (IBR) with the LainOS XMPP server. Upon success, your new XMPP account will be ready for use.
 
 This project is part of the [vesme‑avf repo](https://gitlab.com/amnesia1337/vesme-avf) and integrates secure comms into LainOS. [vesme-avf GitHub](https://github.com/amnesia1337/vesme-avf/tree/main)
 
