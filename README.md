@@ -67,7 +67,7 @@ The easiest and most reliable method to register an account on the LainOS XMPP s
 
 Prerequisites
 
-    Orbot: Installed and running.
+    Orbot: Installed and running. select check the 'power user mode' box in the settings to be able to torify individual apps, do not run in VPN mode, I recommend snowflake bridges for android.
 
         Crucial Step: You must manually Torify the app. Go to Orbot's options menu, select "Choose Apps," and make sure "Another.im" is selected to force its connection through the Tor network.
 
