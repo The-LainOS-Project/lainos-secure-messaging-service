@@ -8,7 +8,9 @@ Welcome to the **LainOS Onion XMPP Server Guide** — a privacy‑focused, cross
 
 ## 🌐 What is this?
 
-This project implementation stems all the way back from my work fixing the Tor snowflake pluggable transport for QubesOS and Whonix.  That experience turned into my other project 'VESME', and has finally been integrated another of my projects, LainOS, to creat 'LESME'.
+As the world get more draconian and takes erodes our rights away, using proprietary solutions seems to get more and more invasive by the day. People in certain countries were blocked from downloading LainOS, so in the last 3 days, I ported my vesme-avf project from debian aarch64 to Archlinux x86_64 to integrate with LainOS, and give people more ways to connect easily despite heavy surveillance in their regions.
+
+This project implementation stems all the way back from my work fixing the Tor snowflake pluggable transport for QubesOS and Whonix. That experience turned spawned other project 'vesme-avf' or VESME, and has finally been integrated with another of my projects, LainOS, to create 'LESME'.
 
 [vesme-avf](https://github.com/amnesia1337/vesme-avf/tree/main)
 [LainOS](https://github.com/The-LainOS-Project)
