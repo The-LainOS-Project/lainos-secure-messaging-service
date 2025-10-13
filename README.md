@@ -1,6 +1,6 @@
-# LainOS Secure Messaging Server(LSMS) — XMPP over Tor
+# LainOS Secure Messaging Service(LSMS) aka LESME(LainOS Ephemeral Secure Messaging Environment ) — XMPP over Tor
 
-Welcome to the **LainOS Onion XMPP Server Guide** — a privacy‑focused, cross‑platform messaging framework using XMPP and the Tor network. For Lain fans(or anyone for that matter) who value privacy.
+Welcome to the **LainOS Onion XMPP Service Guide** — a privacy‑focused, cross‑platform messaging framework using XMPP and the Tor network. For Lain fans(or anyone for that matter) who value privacy.
 ![LESME](https://gitlab.com/lainos/lainos-onion-xmpp-server-guide/-/raw/main/lesme_12.png?ref_type=heads)
 
 ![LESME](https://gitlab.com/lainos/lainos-onion-xmpp-server-guide/-/raw/main/lesme9.png?ref_type=heads)
@@ -10,7 +10,7 @@ Welcome to the **LainOS Onion XMPP Server Guide** — a privacy‑focused, cross
 
 A private service for anyone, made easier with LainOS.
 
-As the world get more draconian and takes erodes our rights away, using proprietary solutions seems to get more and more invasive by the day. People in certain countries were blocked from downloading LainOS, so in the last 3 days, I ported my vesme-avf project from debian 12 aarch64 to Archlinux x86_64 to integrate with LainOS, and give people more ways to connect easily despite heavy surveillance in their regions. If we're going to live in a cyberpunk dystopia, we need the tools.
+As the world get more draconian and takes erodes our rights away, using proprietary solutions seems to get more and more invasive by the day. People in certain countries were blocked from downloading LainOS, so in the last 3 days, I ported my vesme-avf project from debian 12 aarch64 to Archlinux x86_64 to integrate with LainOS, and give people more ways to connect easily despite heavy surveillance in their regions. If we're going to live in a cyberpunk dystopia, we need the appropriate tools.
 
 This project implementation stems all the way back from my work fixing the Tor snowflake pluggable transport for QubesOS and Whonix. That experience spawned my other project 'vesme-avf' or VESME, and has finally been integrated with another of my more established projects, LainOS, to create 'LESME'. my work on whonix/qubes can be reviewed here: https://gitlab.com/amnesia1337/portfolio
 
