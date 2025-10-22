@@ -21,7 +21,6 @@ This project implementation stems all the way back from my work fixing the Tor s
 
 This document summarizes the security level of the LainOS XMPP utility/setup, which combines XMPP, Tor, and GPG/Pass for highly hardened communication.
 
-The security level achieved by this combination is **Tier 1 (Maximum Hardening)** for a federated messaging system, placing a strong emphasis on **metadata reduction, anonymity, and user-controlled identity.**
 
 ---
 
@@ -48,7 +47,7 @@ The LainOS setup is fundamentally more resilient against certain attacks than co
 | **Network Anonymity** | **Highest.** Mandatory routing through Tor. | **Low.** Uses clearnet connection, exposing user IP and device metadata. |
 | **Metadata Protection** | **Excellent** (Tor prevents traffic analysis/logging). | **Good** (Proprietary "Sealed Sender" techniques), but connection metadata is still known to the service provider. |
 | **Identity Anchor** | **GPG Key** (User-controlled, cryptographic). | **Phone Number** (Centralized, KYC-linked identity). |
-| **Platform/Vendor Risk** | **Zero** (Open protocol on self-owned/trusted server). | **High** (Relies on a single, private, third-party entity). |
+| **Platform/Vendor Risk** | **You must trust the LainOS devs and the VPS provider** | **High** (Relies on a single, private, third-party entity). |
 | **End-to-End Encryption** | OMEMO (Based on the Signal Protocol). | Signal Protocol. **Comparable.** |
 
 #### 2. Against Standard XMPP Setups
@@ -63,9 +62,13 @@ The LainOS utility automates the integration of the most critical security exten
 The LainOS utility elevates XMPP security beyond basic End-to-End Encryption (E2EE) by adding crucial layers of **anonymity (Tor)** and **cryptographic identity verification (GPG/Pass)**. This makes it suitable for environments where **metadata and identity protection** are considered equally or more important than message content protection alone.
 XMPP Account Registration (Recommended Method)
 
+Go here for profanity registration instructions: 
+
 The easiest and most reliable method to register an account on the LainOS XMPP server is by combining the Another.im Android client with Orbot running in Power User mode to ensure Tor network access.
 
 Prerequisites
+
+go here for instructions  if you want pgp login: https://gitlab.com/lainos/lainos-secure-messaging-service
 
     Orbot: Installed and running. select check the 'power user mode' box in the settings to be able to torify individual apps, do not run in VPN mode, I recommend snowflake bridges for android.
 
