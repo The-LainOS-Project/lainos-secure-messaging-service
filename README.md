@@ -15,7 +15,8 @@ As the world get more draconian and takes erodes our rights away, using propriet
 This project implementation stems all the way back from my work fixing the Tor snowflake pluggable transport for QubesOS and Whonix. That experience spawned my other project 'vesme-avf' or VESME, and has finally been integrated with another of my more established projects, LainOS, to create 'LESME'. my work on whonix/qubes can be reviewed here: https://gitlab.com/amnesia1337/portfolio
 
 [vesme-avf](https://github.com/amnesia1337/vesme-avf/tree/main)
-[LainOS](https://github.com/The-LainOS-Project)
+[LainOS](https://github.com/The-LainOS-Project)My protfolio
+[My Portfolio](https://github.com/amnesia1337/Portfolio)
 
 ## LainOS XMPP Security Profile: A Technical Overview
 
