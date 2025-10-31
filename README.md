@@ -242,4 +242,15 @@ Stay secure. Stay private. Stay wired.
 
 Grayson Giles aka Amnesia PGP Fingerprint: 2B53 ECEF 5A47 ACF1 9A08 0E46 B2E5 012D 409A 7AFB
 
+### Contributions to QubesOS and Whonix 🔒
+
+* **QubesOS**: Diagnosed, fixed, and enhanced the broken Snowflake Tor pluggable transport feature, while significantly improving its reliability, thus improving the anti-censorship and user anonymity capabilities of QubesOS.
+    * **Guide**: [Quick Start Guide for Snowflake Proxy in Qubes/Whonix](https://forum.qubes-os.org/t/quick-start-guide-snowflake-proxy-in-qubes-whonix-tor-control-panel/28889)
+* **Whonix**: Fixed and enhanced the broken Snowflake Tor pluggable transport feature in Whonix Tor control panel, thus improving the anti-censorship and user anonymity capabilities of Whonix, featured and credited on the Whonix Bridges Wiki page.
+    * **Guide**: [Quick Start Guide for Fixing Snowflake Proxy in Qubes/Whonix](https://forums.whonix.org/t/quick-start-guide-fix-snowflake-proxy-in-qubes-whonix-tor-control-panel/20377)
+    * **Whonix Wiki Contribution**: Featured as a contributor on the [Whonix Bridges Wiki Page](https://www.whonix.org/wiki/Bridges), credited as "Amnesia <`amnesia at boum dot org`>"
+
+---
+
+
 
